@@ -1,16 +1,13 @@
 services:
-  stirling-pdf:
-    image: docker.stirlingpdf.com/stirlingtools/stirling-pdf:latest
+  jupyter:
+  # image: quay.io/jupyter/minimal-notebook
+    image: quay.io/jupyter/datascience-notebook
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
-      - '8080:8080'
+      - '8080:8888'
     volumes:
-      - ./StirlingPDF/trainingData:/usr/share/tessdata # Required for extra OCR languages
-      - ./StirlingPDF/extraConfigs:/configs
-      - ./StirlingPDF/customFiles:/customFiles/
-      - ./StirlingPDF/logs:/logs/
-      - ./StirlingPDF/pipeline:/pipeline/
-    environment:
-      - DISABLE_ADDITIONAL_FEATURES=false
-      - LANGS=en_GB
+      - ./:/home/jovyan/work
+    # environment:
+    #   - DISABLE_ADDITIONAL_FEATURES=false
+    #   - LANGS=en_GB
