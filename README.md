@@ -1,5 +1,16 @@
 jupyter-notebook-action
 =======================
+### Install package
+- Conda
+  ```
+  import sys
+  !conda install --yes --prefix {sys.prefix} numpy
+  ```
+- pip
+  ```
+  import sys
+  !{sys.executable} -m pip install numpy
+  ```
 
 ### DevTunnel
 - See [dirkarnez/devtunnel-playground](https://github.com/dirkarnez/devtunnel-playground)
@@ -14,3 +25,5 @@ jupyter-notebook-action
     - [Organization jupyter · Quay](https://quay.io/organization/jupyter)
   - [~jupyter/base-notebook - Docker Image | Docker Hub~](https://hub.docker.com/r/jupyter/base-notebook/)
 
+### Reference
+- https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/
