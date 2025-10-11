@@ -11,5 +11,6 @@ jupyter-notebook-action
 - `sudo chmod -R +x . && ./build.sh` in CI/CD .yaml file is good enough for running docker build on GitHub Action
 - too busy - use Docker image instead
   - [jupyter/docker-stacks: Ready-to-run Docker images containing Jupyter applications](https://github.com/jupyter/docker-stacks)
+    - [Organization jupyter · Quay](https://quay.io/organization/jupyter)
   - [~jupyter/base-notebook - Docker Image | Docker Hub~](https://hub.docker.com/r/jupyter/base-notebook/)
 
