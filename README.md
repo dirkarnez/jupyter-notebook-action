@@ -1,6 +1,5 @@
-stirlingpdf-action
-==================
-[Stirling-Tools/Stirling-PDF: #1 Locally hosted web application that allows you to perform various operations on PDF files](https://github.com/Stirling-Tools/Stirling-PDF)
+jupyter-notebook-action
+=======================
 
 ### DevTunnel
 - See [dirkarnez/devtunnel-playground](https://github.com/dirkarnez/devtunnel-playground)
@@ -11,5 +10,6 @@ stirlingpdf-action
 ### Notes
 - `sudo chmod -R +x . && ./build.sh` in CI/CD .yaml file is good enough for running docker build on GitHub Action
 - too busy - use Docker image instead
-  - [Docker Guide | Stirling-PDF](https://docs.stirlingpdf.com/Installation/Docker%20Install)
+  - [jupyter/docker-stacks: Ready-to-run Docker images containing Jupyter applications](https://github.com/jupyter/docker-stacks)
+  - [~jupyter/base-notebook - Docker Image | Docker Hub~](https://hub.docker.com/r/jupyter/base-notebook/)
 
