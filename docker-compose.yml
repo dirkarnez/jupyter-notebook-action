@@ -1,13 +1,13 @@
 services:
   jupyter:
-  # image: quay.io/jupyter/minimal-notebook
-    image: quay.io/jupyter/datascience-notebook
+  # image: quay.io/jupyter/minimal-notebook, quay.io/jupyter/datascience-notebook
+    image: jupyter/datascience-notebook:latest
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
       - '8080:8888'
     volumes:
-      - ./:/home/jovyan/work
+      - ./:/home/jovyan/my-notebooks
     # environment:
     #   - DISABLE_ADDITIONAL_FEATURES=false
     #   - LANGS=en_GB
